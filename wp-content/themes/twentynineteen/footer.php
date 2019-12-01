@@ -56,7 +56,7 @@
 			}
 }
 			?><br>Propulsé par <a href="https://wordpress.org/">WordPress</a> · Développé par <a href="https://nlt.dev/">NLT.dev</a> · <a href="https://github.com/alixetnico/blog.alixetnico.com">1.0.0.</a><br>
-			© <a href="/2019">2019</a> <a class="site-name" href="https://www.alixetnico.com/">A&N</a>.</div><!-- .site-info -->
+			© <a href="/2019">2019</a> <a class="site-name" href="https://www.alixetnico.com/">Alix & Nico</a> ®</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
