@@ -49,9 +49,10 @@
  
 if ( $post_tags ) {
     foreach( $post_tags as $tag ) {
-    echo $tag->name . ','; 
+    echo $tag->name . ',';
     }
-} ?>" target="_blank" class="Twitter">Partagez-le</a> ;)</footer><!-- .entry-footer -->
+} ?>alixetnico" target="_blank" class="Twitter">Partagez-le</a> <i class="fab fa-twitter"></i><br>
+	<a href="/sabonner" class="Twitter">Abonnez-vous</a> <i class="fas fa-envelope-open-text"></i></footer><!-- .entry-footer -->
 
 	<?php if ( ! is_singular( 'attachment' ) ) : ?>
 		<?php get_template_part( 'template-parts/post/author', 'bio' ); ?>

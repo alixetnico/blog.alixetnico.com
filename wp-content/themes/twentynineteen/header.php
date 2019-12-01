@@ -22,7 +22,7 @@
     <link rel="icon" href="https://img.alixetnico.com/&b.png" type="image/png">
     <?php if ( is_home() ) : ?>
 	<meta name="twitter:title" content="Blog d'Alix & Nico">
-	<meta property="og:image" content="https://img.alixetnico.com/card.png" />
+	<meta property="og:image" content="https://img.alixetnico.com/&card.png" />
     <?php endif; ?>
 	<?php if ( is_single() ) : ?>
 	<meta name="twitter:title" content="<?php the_title(); ?>">
