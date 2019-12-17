@@ -44,7 +44,7 @@
 		?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
-		Vous avez aimé cet article ?<br>
+		Vous avez aimé ce post ?<br>
 		<a href="https://twitter.com/intent/tweet?url=<?php echo get_permalink(); ?>&text=<?php the_title(); ?>&via=alixetnico&hashtags=<?php $post_tags = get_the_tags();
  
 if ( $post_tags ) {
@@ -52,7 +52,7 @@ if ( $post_tags ) {
     echo $tag->name . ',';
     }
 } ?>alixetnico" target="_blank" class="Twitter">Partagez-le</a> <i class="fab fa-twitter"></i><br>
-	<a href="/sabonner" class="Twitter">Abonnez-vous</a> <i class="fas fa-envelope-open-text"></i></footer><!-- .entry-footer -->
+	<a href="/sabonner/" class="Twitter">Abonnez-vous</a> <i class="fas fa-envelope-open-text"></i></footer><!-- .entry-footer -->
 
 	<?php if ( ! is_singular( 'attachment' ) ) : ?>
 		<?php get_template_part( 'template-parts/post/author', 'bio' ); ?>

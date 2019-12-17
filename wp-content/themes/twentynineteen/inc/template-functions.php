@@ -77,11 +77,11 @@ function twentynineteen_get_the_archive_title() {
 	} elseif ( is_author() ) {
 		$title = __( '', 'twentynineteen' ) . '<span class="page-description">' . get_the_author_meta( 'display_name' ) . '</span>';
 	} elseif ( is_year() ) {
-		$title = __( '', 'twentynineteen' ) . '<span class="page-description">🗓 ' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentynineteen' ) ) . '</span>';
+		$title = __( '', 'twentynineteen' ) . '<span class="page-description">' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentynineteen' ) ) . '</span>';
 	} elseif ( is_month() ) {
-		$title = __( '', 'twentynineteen' ) . '<span class="page-description">🗓 ' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentynineteen' ) ) . '</span>';
+		$title = __( '', 'twentynineteen' ) . '<span class="page-description">' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentynineteen' ) ) . '</span>';
 	} elseif ( is_day() ) {
-		$title = __( '', 'twentynineteen' ) . '<span class="page-description">🗓 ' . get_the_date() . '</span>';
+		$title = __( '', 'twentynineteen' ) . '<span class="page-description">' . get_the_date() . '</span>';
 	} elseif ( is_post_type_archive() ) {
 		$title = __( 'Post Type Archives: ', 'twentynineteen' ) . '<span class="page-description">' . post_type_archive_title( '', false ) . '</span>';
 	} elseif ( is_tax() ) {

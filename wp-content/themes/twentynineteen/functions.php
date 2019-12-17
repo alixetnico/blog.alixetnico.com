@@ -16,6 +16,27 @@ function filter_search($query) {
 }
 add_filter('pre_get_posts', 'filter_search');
 
+//Eviter mise à jour du thème
+/* HANDLE WORDPRESS UPDATE.
+* Reason of this custom code :
+* we want to avoid broken website by aggressive updates.
+* In some cases, some customers don't want pay extra money for renew their plugins licences
+* and few plugins can be discontinued and need to be changed, that can require additional fees.
+* To handle these situations, we need to ask to agreement of the customer.
+* Is he ready to pay for additional annual licences and development fees ?
+*/
+// Disable automatic WordPress plugin updates :
+add_filter( 'auto_update_plugin', '__return_false' );
+// Disable automatic WordPress theme updates :
+add_filter( 'auto_update_theme', '__return_false' );
+// Disable All Update Notifications with Code. Just like the plugin described at the beginning of this comment, the code below will disable update notifications for the WordPress core, plugins, and themes.
+function remove_core_updates(){
+global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+}
+add_filter('pre_site_transient_update_core','remove_core_updates');
+add_filter('pre_site_transient_update_plugins','remove_core_updates');
+add_filter('pre_site_transient_update_themes','remove_core_updates');
+
 
 function html5_search_form( $form ) { 
      $form = '<section class="search"><form role="search" method="get" id="search-form" action="' . home_url( '/' ) . '" >
